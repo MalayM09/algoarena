@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/
+
+# Outputs
+outputs/
+
+# Models
+models/checkpoints/
+
+# Binary artifacts
+*.parquet
+*.npy
+*.pkl
+*.pickle
+*.joblib
+
+# Logs
+*.log
+
+# Large submissions
+*.csv
+
+# Virtual envs
+venv/
+env/
+.venv/

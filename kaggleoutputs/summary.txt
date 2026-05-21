@@ -1,0 +1,30 @@
+======================================================================
+STRUCTURAL DEEP DIVE v2 — SUMMARY
+Run: 2026-03-29 05:08  |  Total time: 35.4 min
+======================================================================
+
+=== H1: PRICE FINGERPRINTING ===
+Best match rate: 99.16%  dp=0
+Matched: 362204/365289
+VERDICT: HIGH MATCH — price identity viable
+Within-train IC at dp=6: median=+0.71242
+
+=== H2: RECONSTRUCTED RAW LAGS ===
+Pairs: 111  |  Gold reco: 0
+Mean reco ICIR: 0.0738  vs LagT1: 0.1474
+VERDICT: DEAD END — differences beat levels
+
+=== H3: MULTI-LAG MOMENTUM ===
+Pairs: 111
+  Older     : mean=0.0930  beats LagT1: 28/111
+  Accel     : mean=0.0442  beats LagT1: 19/111
+  Sign      : mean=0.0425  beats LagT1: 17/111
+  Ratio     : mean=0.0443  beats LagT1: 23/111
+VERDICT: LagT1 already optimal
+
+Files saved in /kaggle/working/:
+  h1_price_fingerprint.csv
+  h1_within_train_ic.csv (if matches found)
+  h2_reconstructed_lags.csv
+  h3_momentum_ratios.csv
+  h3b_triple_lag.csv (if LagT3 pairs exist)
